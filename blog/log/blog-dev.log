@@ -1,0 +1,593 @@
+2020-02-14 10:36:05.272  INFO 8160 --- [restartedMain] com.zhk.BlogApplication                  : Starting BlogApplication on 周宏坤的老戴尔 with PID 8160 (D:\blogs\blog\target\classes started by 周宏坤 in D:\blogs\blog)
+2020-02-14 10:36:05.373 DEBUG 8160 --- [restartedMain] com.zhk.BlogApplication                  : Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-14 10:36:05.373  INFO 8160 --- [restartedMain] com.zhk.BlogApplication                  : The following profiles are active: dev
+2020-02-14 10:36:05.506  INFO 8160 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\周宏坤\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%e5%91%a8%e5%ae%8f%e5%9d%a4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%e5%91%a8%e5%ae%8f%e5%9d%a4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/%e5%91%a8%e5%ae%8f%e5%9d%a4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%e5%91%a8%e5%ae%8f%e5%9d%a4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/%e5%91%a8%e5%ae%8f%e5%9d%a4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/%e5%91%a8%e5%ae%8f%e5%9d%a4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-14 10:36:05.506  INFO 8160 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-14 10:36:05.506  INFO 8160 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-14 10:36:06.980  INFO 8160 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-14 10:36:07.124  INFO 8160 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120ms. Found 5 JPA repository interfaces.
+2020-02-14 10:36:07.625  INFO 8160 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-14 10:36:08.442  INFO 8160 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-14 10:36:08.473  INFO 8160 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-14 10:36:08.473  INFO 8160 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-14 10:36:08.658  INFO 8160 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-14 10:36:08.658  INFO 8160 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3152 ms
+2020-02-14 10:36:09.026  INFO 8160 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-14 10:36:09.134  INFO 8160 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-14 10:36:09.353  INFO 8160 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-14 10:36:09.520  INFO 8160 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-14 10:36:09.795  INFO 8160 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-14 10:36:09.811  INFO 8160 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-14 10:36:11.164  INFO 8160 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-14 10:36:11.179  INFO 8160 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-14 10:36:11.273  INFO 8160 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-14 10:36:12.856  INFO 8160 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-14 10:36:13.043  INFO 8160 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-14 10:36:14.091  INFO 8160 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-14 10:36:14.091  INFO 8160 --- [restartedMain] com.zhk.BlogApplication                  : Started BlogApplication in 9.816 seconds (JVM running for 15.143)
+2020-02-14 10:37:18.599  INFO 8160 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-14 10:37:18.600  INFO 8160 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-14 10:37:18.618  INFO 8160 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-02-14 10:37:27.207  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-14 10:37:27.367  WARN 8160 --- [http-nio-8080-exec-9] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-02-14 10:37:27.390  WARN 8160 --- [http-nio-8080-exec-9] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-02-14 10:37:27.397  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : result:{}index
+2020-02-14 10:37:27.883  INFO 8160 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:37:27.891  INFO 8160 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:37:30.605  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-14 10:37:30.641  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : result:{}types
+2020-02-14 10:37:30.939  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:37:30.946  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:37:34.321  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-14 10:37:34.356  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : result:{}tags
+2020-02-14 10:37:34.666  INFO 8160 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:37:34.674  INFO 8160 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:37:36.232  INFO 8160 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.ArchiveShowController.archives', args=[{}]}
+2020-02-14 10:37:36.259  INFO 8160 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : result:{}archives
+2020-02-14 10:37:36.546  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:37:36.552  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:37:37.886  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/25', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.blog', args=[25, {}]}
+2020-02-14 10:37:38.011  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : result:{}blog
+2020-02-14 10:37:38.437  INFO 8160 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:37:38.442  INFO 8160 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:37:38.625  INFO 8160 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/25', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.CommentController.comments', args=[25, {}]}
+2020-02-14 10:37:38.678  INFO 8160 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : result:{}blog :: commentList
+2020-02-14 10:37:40.423  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.AboutShowController.about', args=[]}
+2020-02-14 10:37:40.426  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : result:{}about
+2020-02-14 10:37:40.699  INFO 8160 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:37:40.705  INFO 8160 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:37:56.362  INFO 8160 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.ArchiveShowController.archives', args=[{}]}
+2020-02-14 10:37:56.373  INFO 8160 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : result:{}archives
+2020-02-14 10:37:56.773  INFO 8160 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:37:56.781  INFO 8160 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:37:58.372  INFO 8160 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-14 10:37:58.385  INFO 8160 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : result:{}index
+2020-02-14 10:37:58.663  INFO 8160 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:37:58.667  INFO 8160 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:38:02.292  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/31', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.blog', args=[31, {}]}
+2020-02-14 10:38:02.301  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : result:{}blog
+2020-02-14 10:38:02.614  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:38:02.619  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:38:06.432  INFO 8160 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/25', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.blog', args=[25, {}]}
+2020-02-14 10:38:06.438  INFO 8160 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : result:{}blog
+2020-02-14 10:38:06.718  INFO 8160 --- [http-nio-8080-exec-6] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:38:06.723  INFO 8160 --- [http-nio-8080-exec-6] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:38:06.830  INFO 8160 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/25', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.CommentController.comments', args=[25, {}]}
+2020-02-14 10:38:06.851  INFO 8160 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : result:{}blog :: commentList
+2020-02-14 10:38:53.721  INFO 8160 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-14 10:38:53.731  INFO 8160 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : result:{}types
+2020-02-14 10:38:54.076  INFO 8160 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:38:54.082  INFO 8160 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:38:56.334  INFO 8160 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.AboutShowController.about', args=[]}
+2020-02-14 10:38:56.334  INFO 8160 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : result:{}about
+2020-02-14 10:38:56.707  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:38:56.712  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:38:58.671  INFO 8160 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-14 10:38:58.688  INFO 8160 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : result:{}index
+2020-02-14 10:38:59.059  INFO 8160 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:38:59.064  INFO 8160 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:46:32.184  WARN 8160 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1406, SQLState: 22001
+2020-02-14 10:46:32.185 ERROR 8160 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Data truncation: Data too long for column 'first_picture' at row 1
+2020-02-14 10:46:32.212 ERROR 8160 --- [http-nio-8080-exec-2] c.z.handler.ControllerExceptionHandler   : Request url: /admin/blogs,Exception:{}
+
+org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.DataException: could not execute statement
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:302) ~[spring-orm-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:255) ~[spring-orm-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:538) ~[spring-orm-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:744) ~[spring-tx-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:712) ~[spring-tx-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:631) ~[spring-tx-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385) ~[spring-tx-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99) ~[spring-tx-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at com.zhk.service.BlogServiceImpl$$EnhancerBySpringCGLIB$$909e1506.saveBlog(<generated>) ~[classes/:na]
+	at com.zhk.controller.admin.BlogController.post(BlogController.java:82) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_202]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_202]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_202]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_202]
+Caused by: org.hibernate.exception.DataException: could not execute statement
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:52) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:200) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3226) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3751) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:91) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684) ~[na:1.8.0_202]
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:348) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:108) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1344) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:435) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3221) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2389) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:447) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:534) ~[spring-orm-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	... 60 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Data too long for column 'first_picture' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1040) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1347) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:1025) ~[mysql-connector-java-8.0.19.jar:8.0.19]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-3.4.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-3.4.2.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197) ~[hibernate-core-5.4.10.Final.jar:5.4.10.Final]
+	... 80 common frames omitted
+
+2020-02-14 10:46:32.214  WARN 8160 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.DataException: could not execute statement]
+2020-02-14 10:49:56.305 ERROR 8160 --- [http-nio-8080-exec-6] c.z.handler.ControllerExceptionHandler   : Request url: /admin/blogs,Exception:{}
+
+org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:374) ~[spring-orm-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:257) ~[spring-orm-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:528) ~[spring-orm-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242) ~[spring-tx-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:153) ~[spring-tx-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:178) ~[spring-data-jpa-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at com.sun.proxy.$Proxy133.getOne(Unknown Source) ~[na:na]
+	at com.zhk.service.TypeServiceImpl.getType(TypeServiceImpl.java:31) ~[classes/:na]
+	at com.zhk.service.TypeServiceImpl$$FastClassBySpringCGLIB$$e9d2d2a4.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366) ~[spring-tx-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99) ~[spring-tx-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at com.zhk.service.TypeServiceImpl$$EnhancerBySpringCGLIB$$2b8d8a3e.getType(<generated>) ~[classes/:na]
+	at com.zhk.controller.admin.BlogController.post(BlogController.java:78) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_202]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) [spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_202]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_202]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_202]
+Caused by: java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.util.Assert.notNull(Assert.java:198) ~[spring-core-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.getOne(SimpleJpaRepository.java:301) ~[spring-data-jpa-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_202]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_202]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_202]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_202]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:371) ~[spring-data-commons-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:204) ~[spring-data-commons-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:657) ~[spring-data-commons-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:621) ~[spring-data-commons-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:605) ~[spring-data-commons-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366) ~[spring-tx-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99) ~[spring-tx-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	... 70 common frames omitted
+
+2020-02-14 10:49:56.316  WARN 8160 --- [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!]
+2020-02-14 10:51:42.086  INFO 8160 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-14 10:51:42.099  INFO 8160 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : result:{}index
+2020-02-14 10:51:43.569  INFO 8160 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:51:43.572  INFO 8160 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:51:45.414  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/57', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.blog', args=[57, {}]}
+2020-02-14 10:51:45.430  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : result:{}blog
+2020-02-14 10:51:45.713  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:51:45.719  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:51:45.877  INFO 8160 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/57', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.CommentController.comments', args=[57, {}]}
+2020-02-14 10:51:45.879  INFO 8160 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : result:{}blog :: commentList
+2020-02-14 10:52:06.009  INFO 8160 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.CommentController.post', args=[Comment{id=null, nickname='dasd', email='1233@qq.com', content='123151', avatar='null', createTime=null, blog=Blog{id=57, title='null', content='null', firstPicture='null', flag='null', views=null, appreciation=false, shareStatment=false, commentabled=false, published=false, recommend=false, creatTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds='null', description='null'}, replyComments=[], parentComment=Comment{id=-1, nickname='null', email='null', content='null', avatar='null', createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false}, adminComment=false}, org.apache.catalina.session.StandardSessionFacade@71eebd1]}
+2020-02-14 10:52:06.017  INFO 8160 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : result:{}redirect:/comments/57
+2020-02-14 10:52:06.021  INFO 8160 --- [http-nio-8080-exec-6] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/57', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.CommentController.comments', args=[57, {}]}
+2020-02-14 10:52:06.025  INFO 8160 --- [http-nio-8080-exec-6] com.zhk.aspect.LogAspect                 : result:{}blog :: commentList
+2020-02-14 10:52:23.962  INFO 8160 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-14 10:52:23.971  INFO 8160 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : result:{}types
+2020-02-14 10:52:24.249  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:52:24.253  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:52:25.739  INFO 8160 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-14 10:52:25.749  INFO 8160 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : result:{}index
+2020-02-14 10:52:26.001  INFO 8160 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:52:26.003  INFO 8160 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:52:31.130  INFO 8160 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/types/2', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 2, {}]}
+2020-02-14 10:52:31.135  INFO 8160 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : result:{}types
+2020-02-14 10:52:31.407  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:52:31.411  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:52:35.865  INFO 8160 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/types/1', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 1, {}]}
+2020-02-14 10:52:35.870  INFO 8160 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : result:{}types
+2020-02-14 10:52:36.118  INFO 8160 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:52:36.120  INFO 8160 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:52:37.412  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/types/3', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 3, {}]}
+2020-02-14 10:52:37.419  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : result:{}types
+2020-02-14 10:52:37.696  INFO 8160 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:52:37.699  INFO 8160 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:52:37.892  INFO 8160 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/types/32', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 32, {}]}
+2020-02-14 10:52:37.897  INFO 8160 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : result:{}types
+2020-02-14 10:52:38.155  INFO 8160 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:52:38.158  INFO 8160 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:52:38.975  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-14 10:52:38.982  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : result:{}tags
+2020-02-14 10:52:39.264  INFO 8160 --- [http-nio-8080-exec-6] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:52:39.268  INFO 8160 --- [http-nio-8080-exec-6] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:52:42.563  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-14 10:52:42.570  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : result:{}types
+2020-02-14 10:52:42.814  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:52:42.817  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:52:45.730  INFO 8160 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-14 10:52:45.737  INFO 8160 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : result:{}tags
+2020-02-14 10:52:45.992  INFO 8160 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:52:45.995  INFO 8160 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:52:50.012  INFO 8160 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.ArchiveShowController.archives', args=[{}]}
+2020-02-14 10:52:50.036  INFO 8160 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : result:{}archives
+2020-02-14 10:52:50.280  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:52:50.284  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:52:59.577  INFO 8160 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.AboutShowController.about', args=[]}
+2020-02-14 10:52:59.578  INFO 8160 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : result:{}about
+2020-02-14 10:52:59.838  INFO 8160 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:52:59.841  INFO 8160 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:53:02.777  INFO 8160 --- [http-nio-8080-exec-6] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-14 10:53:02.788  INFO 8160 --- [http-nio-8080-exec-6] com.zhk.aspect.LogAspect                 : result:{}index
+2020-02-14 10:53:03.078  INFO 8160 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:53:03.101  INFO 8160 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:54:23.423  INFO 8160 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-14 10:54:23.430  INFO 8160 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : result:{}types
+2020-02-14 10:54:23.725  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:54:23.728  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:54:24.169  INFO 8160 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-14 10:54:24.179  INFO 8160 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : result:{}index
+2020-02-14 10:54:24.435  INFO 8160 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:54:24.439  INFO 8160 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:54:30.723  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-14 10:54:30.728  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : result:{}types
+2020-02-14 10:54:30.996  INFO 8160 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:54:30.998  INFO 8160 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:54:32.293  INFO 8160 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-14 10:54:32.303  INFO 8160 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : result:{}index
+2020-02-14 10:54:32.550  INFO 8160 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:54:32.553  INFO 8160 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:54:41.232  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.AboutShowController.about', args=[]}
+2020-02-14 10:54:41.233  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : result:{}about
+2020-02-14 10:54:41.499  INFO 8160 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:54:41.503  INFO 8160 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:54:41.650  INFO 8160 --- [http-nio-8080-exec-6] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.ArchiveShowController.archives', args=[{}]}
+2020-02-14 10:54:41.655  INFO 8160 --- [http-nio-8080-exec-6] com.zhk.aspect.LogAspect                 : result:{}archives
+2020-02-14 10:54:41.904  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:54:41.905  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:54:42.477  INFO 8160 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-14 10:54:42.484  INFO 8160 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : result:{}tags
+2020-02-14 10:54:42.734  INFO 8160 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:54:42.738  INFO 8160 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:54:43.708  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-14 10:54:43.717  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : result:{}index
+2020-02-14 10:54:43.992  INFO 8160 --- [http-nio-8080-exec-6] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:54:43.995  INFO 8160 --- [http-nio-8080-exec-6] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:54:54.929  INFO 8160 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-14 10:54:54.935  INFO 8160 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : result:{}types
+2020-02-14 10:54:55.237  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:54:55.240  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:54:57.990  INFO 8160 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-14 10:54:57.998  INFO 8160 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : result:{}index
+2020-02-14 10:54:58.277  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:54:58.280  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:56:28.154  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-14 10:56:28.164  INFO 8160 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : result:{}index
+2020-02-14 10:56:28.454  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:56:28.457  INFO 8160 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:56:51.415  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/57', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.blog', args=[57, {}]}
+2020-02-14 10:56:51.421  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : result:{}blog
+2020-02-14 10:56:51.702  INFO 8160 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:56:51.707  INFO 8160 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:56:51.853  INFO 8160 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/57', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.CommentController.comments', args=[57, {}]}
+2020-02-14 10:56:51.858  INFO 8160 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : result:{}blog :: commentList
+2020-02-14 10:56:58.888  INFO 8160 --- [http-nio-8080-exec-6] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-14 10:56:58.895  INFO 8160 --- [http-nio-8080-exec-6] com.zhk.aspect.LogAspect                 : result:{}types
+2020-02-14 10:56:59.148  INFO 8160 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:56:59.152  INFO 8160 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:57:02.321  INFO 8160 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.AboutShowController.about', args=[]}
+2020-02-14 10:57:02.321  INFO 8160 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : result:{}about
+2020-02-14 10:57:02.568  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 10:57:02.571  INFO 8160 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 10:59:45.373  INFO 8160 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-14 10:59:45.374  INFO 8160 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-14 10:59:45.397  INFO 8160 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-14 11:09:03.031  INFO 7840 --- [restartedMain] com.zhk.BlogApplication                  : Starting BlogApplication on 周宏坤的老戴尔 with PID 7840 (D:\blogs\blog\target\classes started by 周宏坤 in D:\blogs\blog)
+2020-02-14 11:09:03.031 DEBUG 7840 --- [restartedMain] com.zhk.BlogApplication                  : Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-14 11:09:03.031  INFO 7840 --- [restartedMain] com.zhk.BlogApplication                  : The following profiles are active: dev
+2020-02-14 11:09:03.136  INFO 7840 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\周宏坤\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%e5%91%a8%e5%ae%8f%e5%9d%a4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%e5%91%a8%e5%ae%8f%e5%9d%a4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/%e5%91%a8%e5%ae%8f%e5%9d%a4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%e5%91%a8%e5%ae%8f%e5%9d%a4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/%e5%91%a8%e5%ae%8f%e5%9d%a4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/%e5%91%a8%e5%ae%8f%e5%9d%a4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-14 11:09:03.137  INFO 7840 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-14 11:09:03.137  INFO 7840 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-14 11:09:04.151  INFO 7840 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-14 11:09:04.276  INFO 7840 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109ms. Found 5 JPA repository interfaces.
+2020-02-14 11:09:04.723  INFO 7840 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-14 11:09:05.693  INFO 7840 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-14 11:09:05.709  INFO 7840 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-14 11:09:05.709  INFO 7840 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-14 11:09:05.893  INFO 7840 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-14 11:09:05.893  INFO 7840 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2755 ms
+2020-02-14 11:09:06.351  INFO 7840 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-14 11:09:06.460  INFO 7840 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-14 11:09:06.693  INFO 7840 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-14 11:09:06.909  INFO 7840 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-14 11:09:07.091  INFO 7840 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-14 11:09:07.107  INFO 7840 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-14 11:09:08.446  INFO 7840 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-14 11:09:08.462  INFO 7840 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-14 11:09:08.584  INFO 7840 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-14 11:09:10.031  INFO 7840 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-14 11:09:10.149  INFO 7840 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-14 11:09:10.707  INFO 7840 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-14 11:09:10.707  INFO 7840 --- [restartedMain] com.zhk.BlogApplication                  : Started BlogApplication in 8.819 seconds (JVM running for 12.272)
+2020-02-14 11:10:24.634  INFO 7840 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-14 11:10:24.635  INFO 7840 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-14 11:10:24.650  INFO 7840 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-02-14 11:10:24.695  INFO 7840 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-14 11:10:24.830  WARN 7840 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-02-14 11:10:24.850  WARN 7840 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-02-14 11:10:24.857  INFO 7840 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : result:{}index
+2020-02-14 11:10:25.742  INFO 7840 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 11:10:25.747  INFO 7840 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 11:10:30.040  INFO 7840 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.ArchiveShowController.archives', args=[{}]}
+2020-02-14 11:10:30.079  INFO 7840 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : result:{}archives
+2020-02-14 11:10:30.351  INFO 7840 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 11:10:30.358  INFO 7840 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 11:10:32.272  INFO 7840 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-14 11:10:32.321  INFO 7840 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : result:{}tags
+2020-02-14 11:10:32.605  INFO 7840 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 11:10:32.610  INFO 7840 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 11:10:35.826  INFO 7840 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/archives', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.ArchiveShowController.archives', args=[{}]}
+2020-02-14 11:10:35.836  INFO 7840 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : result:{}archives
+2020-02-14 11:10:36.094  INFO 7840 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 11:10:36.100  INFO 7840 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 11:10:37.153  INFO 7840 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/tags/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-14 11:10:37.165  INFO 7840 --- [http-nio-8080-exec-10] com.zhk.aspect.LogAspect                 : result:{}tags
+2020-02-14 11:10:37.442  INFO 7840 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 11:10:37.447  INFO 7840 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 11:10:38.757  INFO 7840 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/types/-1', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2020-02-14 11:10:38.771  INFO 7840 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : result:{}types
+2020-02-14 11:10:39.066  INFO 7840 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 11:10:39.072  INFO 7840 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 11:10:40.919  INFO 7840 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-14 11:10:40.933  INFO 7840 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : result:{}index
+2020-02-14 11:10:41.226  INFO 7840 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 11:10:41.232  INFO 7840 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 11:11:15.872  INFO 7840 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-14 11:11:15.872  INFO 7840 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-14 11:11:15.872  INFO 7840 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-14 11:11:15.887  INFO 7840 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-14 11:39:54.189  INFO 15636 --- [restartedMain] com.zhk.BlogApplication                  : Starting BlogApplication on 周宏坤的老戴尔 with PID 15636 (D:\blogs\blog\target\classes started by 周宏坤 in D:\blogs\blog)
+2020-02-14 11:39:54.200 DEBUG 15636 --- [restartedMain] com.zhk.BlogApplication                  : Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-14 11:39:54.202  INFO 15636 --- [restartedMain] com.zhk.BlogApplication                  : The following profiles are active: dev
+2020-02-14 11:39:54.342  INFO 15636 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\周宏坤\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/%e5%91%a8%e5%ae%8f%e5%9d%a4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/%e5%91%a8%e5%ae%8f%e5%9d%a4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/%e5%91%a8%e5%ae%8f%e5%9d%a4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/%e5%91%a8%e5%ae%8f%e5%9d%a4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/%e5%91%a8%e5%ae%8f%e5%9d%a4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/%e5%91%a8%e5%ae%8f%e5%9d%a4/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-02-14 11:39:54.343  INFO 15636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-02-14 11:39:54.344  INFO 15636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-02-14 11:39:56.467  INFO 15636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-14 11:39:56.651  INFO 15636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 168ms. Found 5 JPA repository interfaces.
+2020-02-14 11:39:57.404  INFO 15636 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-14 11:39:58.441  INFO 15636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-14 11:39:58.460  INFO 15636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-14 11:39:58.460  INFO 15636 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-14 11:39:58.747  INFO 15636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-14 11:39:58.748  INFO 15636 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4403 ms
+2020-02-14 11:39:59.275  INFO 15636 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-14 11:39:59.411  INFO 15636 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-02-14 11:39:59.692  INFO 15636 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-02-14 11:39:59.932  INFO 15636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-02-14 11:40:00.227  INFO 15636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-02-14 11:40:00.263  INFO 15636 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-14 11:40:02.216  INFO 15636 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-14 11:40:02.233  INFO 15636 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-14 11:40:02.366  INFO 15636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-14 11:40:05.039  INFO 15636 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-14 11:40:05.330  INFO 15636 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-14 11:40:06.180  INFO 15636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-14 11:40:06.184  INFO 15636 --- [restartedMain] com.zhk.BlogApplication                  : Started BlogApplication in 13.325 seconds (JVM running for 17.143)
+2020-02-14 11:41:24.982  INFO 15636 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-14 11:41:24.982  INFO 15636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-14 11:41:25.013  INFO 15636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 31 ms
+2020-02-14 11:41:25.080  INFO 15636 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-14 11:41:25.299  WARN 15636 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-02-14 11:41:25.315  WARN 15636 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-02-14 11:41:25.330  INFO 15636 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : result:{}index
+2020-02-14 11:41:26.956  INFO 15636 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 11:41:26.968  INFO 15636 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 11:41:46.771  INFO 15636 --- [http-nio-8080-exec-6] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/57', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.blog', args=[57, {}]}
+2020-02-14 11:41:47.018  INFO 15636 --- [http-nio-8080-exec-6] com.zhk.aspect.LogAspect                 : result:{}blog
+2020-02-14 11:41:47.665  INFO 15636 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 11:41:47.676  INFO 15636 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 11:41:48.154  INFO 15636 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/57', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.CommentController.comments', args=[57, {}]}
+2020-02-14 11:41:48.220  INFO 15636 --- [http-nio-8080-exec-2] com.zhk.aspect.LogAspect                 : result:{}blog :: commentList
+2020-02-14 11:42:06.449  INFO 15636 --- [http-nio-8080-exec-6] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/blog/57', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.blog', args=[57, {}]}
+2020-02-14 11:42:06.456  INFO 15636 --- [http-nio-8080-exec-6] com.zhk.aspect.LogAspect                 : result:{}blog
+2020-02-14 11:42:06.790  INFO 15636 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 11:42:06.796  INFO 15636 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 11:42:06.899  INFO 15636 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/comments/57', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.CommentController.comments', args=[57, {}]}
+2020-02-14 11:42:06.906  INFO 15636 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : result:{}blog :: commentList
+2020-02-14 11:46:00.813  INFO 15636 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-14 11:46:00.834  INFO 15636 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : result:{}index
+2020-02-14 11:46:01.293  INFO 15636 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 11:46:01.300  INFO 15636 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 11:46:19.683  INFO 15636 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.AboutShowController.about', args=[]}
+2020-02-14 11:46:19.686  INFO 15636 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : result:{}about
+2020-02-14 11:46:20.063  INFO 15636 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 11:46:20.068  INFO 15636 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 11:49:36.217  INFO 15636 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.AboutShowController.about', args=[]}
+2020-02-14 11:49:36.217  INFO 15636 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : result:{}about
+2020-02-14 11:49:36.525  INFO 15636 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 11:49:36.530  INFO 15636 --- [http-nio-8080-exec-8] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 11:51:25.532  INFO 15636 --- [Thread-21] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-14 11:51:25.534  INFO 15636 --- [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-14 11:51:25.542  INFO 15636 --- [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-02-14 11:51:25.566  INFO 15636 --- [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-02-14 11:51:27.257  INFO 15636 --- [restartedMain] com.zhk.BlogApplication                  : Starting BlogApplication on 周宏坤的老戴尔 with PID 15636 (D:\blogs\blog\target\classes started by 周宏坤 in D:\blogs\blog)
+2020-02-14 11:51:27.257 DEBUG 15636 --- [restartedMain] com.zhk.BlogApplication                  : Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-02-14 11:51:27.258  INFO 15636 --- [restartedMain] com.zhk.BlogApplication                  : The following profiles are active: dev
+2020-02-14 11:51:27.653  INFO 15636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-02-14 11:51:27.705  INFO 15636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51ms. Found 5 JPA repository interfaces.
+2020-02-14 11:51:27.811  INFO 15636 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-02-14 11:51:28.188  INFO 15636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-02-14 11:51:28.189  INFO 15636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-02-14 11:51:28.189  INFO 15636 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-02-14 11:51:28.249  INFO 15636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-02-14 11:51:28.249  INFO 15636 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 987 ms
+2020-02-14 11:51:28.385  INFO 15636 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-02-14 11:51:28.391  INFO 15636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-02-14 11:51:28.417  INFO 15636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-02-14 11:51:28.417  INFO 15636 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-02-14 11:51:28.792  INFO 15636 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-02-14 11:51:28.793  INFO 15636 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-02-14 11:51:28.839  INFO 15636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-02-14 11:51:29.585  INFO 15636 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-02-14 11:51:29.649  INFO 15636 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-02-14 11:51:29.980  INFO 15636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-02-14 11:51:29.982  INFO 15636 --- [restartedMain] com.zhk.BlogApplication                  : Started BlogApplication in 2.787 seconds (JVM running for 700.941)
+2020-02-14 11:51:29.985  INFO 15636 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-02-14 11:51:29.987  INFO 15636 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-02-14 11:51:29.988  INFO 15636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-02-14 11:51:29.999  INFO 15636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-02-14 11:51:30.003  INFO 15636 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='127.0.0.1', classMethod='com.zhk.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-14 11:51:30.023  WARN 15636 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-02-14 11:51:30.029  WARN 15636 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-02-14 11:51:30.037  INFO 15636 --- [http-nio-8080-exec-1] com.zhk.aspect.LogAspect                 : result:{}index
+2020-02-14 11:51:30.382  INFO 15636 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 11:51:30.386  INFO 15636 --- [http-nio-8080-exec-3] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 11:51:36.434  INFO 15636 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/about', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.AboutShowController.about', args=[]}
+2020-02-14 11:51:36.438  INFO 15636 --- [http-nio-8080-exec-9] com.zhk.aspect.LogAspect                 : result:{}about
+2020-02-14 11:51:36.738  INFO 15636 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 11:51:36.742  INFO 15636 --- [http-nio-8080-exec-4] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 11:52:24.275  INFO 15636 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2020-02-14 11:52:24.292  INFO 15636 --- [http-nio-8080-exec-5] com.zhk.aspect.LogAspect                 : result:{}index
+2020-02-14 11:52:24.752  INFO 15636 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : Request:{url='http://localhost:8080/footer/newblog', ip='0:0:0:0:0:0:0:1', classMethod='com.zhk.controller.IndexController.newblogs', args=[{}]}
+2020-02-14 11:52:24.761  INFO 15636 --- [http-nio-8080-exec-7] com.zhk.aspect.LogAspect                 : result:{}_fragments :: newblogList
+2020-02-14 11:59:53.847  INFO 15636 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-02-14 11:59:53.847  INFO 15636 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-02-14 11:59:53.847  INFO 15636 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-02-14 11:59:53.862  INFO 15636 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
